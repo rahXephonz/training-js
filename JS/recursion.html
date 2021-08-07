@@ -1,6 +1,4 @@
-//fungsi yang memanggilnya sendiri
-
-
+//rekursif adalah fungsi yang memanggil dirinya sendiri
 <script>
 
 function tampilAngka(n){
@@ -15,7 +13,7 @@ tampilAngka(10);
 
 function faktorial(n){
     
-    if(n === 0){ // jika nilai n dinyatakan 0 kembalikan ke nilai 1
+    if(n === 0){ // jika nilai n dinyatakan 0 kembalikan ke nilai 1 //ini adalah base case adalah kondisi akihr yang memiliki nilai
         return 1;
     }
     
@@ -26,10 +24,15 @@ function faktorial(n){
 var nilai = parseInt(prompt("Nilai: "));
 console.log(faktorial(nilai));
 
-// harus banyak banyak belajar!
 
+// function faktorial(n){
+//     var hasil = 1;
+//     for (var i = n; i > 0; i--){
+//         hasil *= i;
+//     }
 
+//     return hasil;
+// }
 
-
-//base case adalah kondisi akihr yang memiliki nilai
+// console.log(faktorial(5));
 </script>

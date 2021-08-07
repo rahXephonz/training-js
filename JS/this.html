@@ -1,0 +1,17 @@
+<script>
+
+    var obj = {};
+    obj.halo = function() {
+        console.log(this); // this disini mengembalikan objek itu sendiri atau objek bersangkutan
+        console.log('halo');
+    }
+
+    obj.halo();
+
+    function Halo(){
+        console.log(this); // this mengembalikan objek yang akan dibuat
+        console.log('halo');
+    }
+
+    new Halo();
+</script>

@@ -1,0 +1,92 @@
+Membuat program juragan angkot yang mengelola penumpang naik,turun,duduk
+Ridle and representasi
+denah tempat duduk ada di picture juraganangkot.png
+
+
+*penumpang naik tambahPenumpang()
+*penumpang turun hapusPenumpang()
+
+exercise
+
+*Jika penumpang kosong maka penumpang naik duduk,dikursi pertama
+*dan penumpang berikutnya duduk dikursi selanjutnya secara berurutan
+*jika ada kursi kosong karena penumpang turun, penumpang yang naik berikutnya duduk dikursi kosong terlebih dahulu mengisi yang kosong
+*asumsi tidak akan penuh akan terus bertambah terus jika ada penumpang naik
+*nama penumpang tidak boleh sama,untuk menghindari penumpang kebingungan ketika nanti
+
+
+<script>
+    //Tempat duduk atau kursi angkot
+    var penumpang = [];
+    function tambahPenumpang(namaPen, penumpang){
+        // Jika ada kursi angkot kosong atau ada array kosong
+        if (penumpang.length == 0){
+            //tambah penumpang diawal array
+            penumpang.push(namaPen);
+            //kembalikan isi array dan keluar dari function  
+            return penumpang;
+        }
+
+        else{
+            //Telurusi kursi dari awal
+            for (var i = 0; i < penumpang.length; i++ ){
+                //jika ada kursi kosong
+
+                //kalau ada kursi kosong 
+                if(penumpang[i] == undefined){
+                    //tambah pennumpang dikursi tersebut
+                    penumpang[i] = namaPen;
+                    //kembalikan isi array dan keluar dari function
+                    return penumpang;
+                }
+                //jika sudah ada nama yang sama
+                else if(penumpang[i] == namaPen){
+                    //tampilkan pesan kesalahannya
+                    console.log(namaPen + ' Sudah memasuki angkot');
+                    //kembalikan isi array dan keluar dari function
+                    return penumpang;
+                }
+
+                //jika seluruh kursi terisi dan menyisakan kursi lain
+                else if(i == penumpang.length - 1){ //Cek isi array - 1 misalkan i 3 == dan isi array sama dengan 3-1 maka kosong otomatis diisi dengan nama penumpang
+
+                    //tambah penumpang diakhir array
+                    penumpang.push(namaPen);
+                    return penumpang;
+                }
+
+                //Jika seluruh kursi sudah terisi
+                else if(penumpang.length == 5){
+                    
+                    console.log('Angkot sedang penuh!');
+                    return penumpang;  
+
+                }
+
+            }
+        }
+    }
+
+    function hapusPenumpang(namaPen, penumpang){
+        //Jika angkot kosong tampilkan pesan bahwa angkot kosong
+        if(penumpang.length == 0){
+            console.log('Angkot sedang kosong!')
+            return penumpang;
+        }
+
+        else{
+            
+            for( var i = 0; i < penumpang.length; i++){
+                //jika ada nama yang sesuai maka hapus penumpang dari array dengan memberi nilai undefined
+                if(penumpang[i] == namaPen){
+                    penumpang[i] = undefined;
+                    return penumpang;
+                }
+                else{
+                    console.log(namaPen + ' tidak ada didalam Angkot.');
+                    return penumpang;
+                }
+            }
+        }
+    }
+</script>

@@ -1,0 +1,63 @@
+<script>
+
+//Susunan sistematis kumpulan key and value key = index yang tersusun
+//Tipe data untuk mendeskripsikan nilai atau var yang memiliki index
+//atau variabel yang supperpower dijs array nya bersifat objek
+//memiliki method length
+
+//Deklarasi array
+
+// var hari = ['Senin','Selasa','Rabu','Kamis','Jum at','Sabtu','Minggu',[4,5,6],[7,8,9],[10,11,12],[13,14,15]];
+
+// console.log(typeof(hari));
+// console.log(hari[1]);
+
+//Delete array
+
+// var hari = ["Senin","Selasa","Rabu"];
+
+// hari[1] = undefined;
+// console.log(hari);
+
+//show array with looping
+
+// var hari = ["Minggu","Senin","Selasa","Rabu"];
+
+// // Method length untuk mengetahui jumlah isi dari array
+// for (var i = 0; i < hari.length; i++){
+//     console.log('Hari ke - ' + (i+1) + ' adalah hari ' + hari[i]);
+// }
+
+//Method array join mengubah isi array menjadi string menjadi rapih
+
+var array = ['Kamu','Dia','Mereka'];
+
+//Method push,pop,shift,unshift ini artinya menambah nilai array
+// array.push('Saya','Alasannya')
+//Menghapus elemen terakhir satu persatu
+//Pop
+//array.pop();
+
+//unshift dan shift unshift tambah elemen diawal shift menghapus elemen di awal
+
+// array.unshift('Lo'); // elemen awal
+// array.shift();
+// 
+
+//Method slice mengiris array, splice menyambung array
+
+//splice (indexawal, maudihapusBerapa,ElemenBaru1, ElemenBaru2,..)
+// array.splice(2,0, 'Gua', 'Lo');
+array.splice(1,2,'Gua', 'Lo');
+console.log(array.join(' '));
+
+//slice
+// var array = ['Kamu','Dia','Mereka','Gua','Lo'];
+// // console.log(array.join(' '));
+// //slce membuat array baru
+// //slice(dimulai dari awal,akhir) dan menyisakan di urutan akhir
+// var array2 = array.slice(1,3);
+// console.log(array.join(' '));
+// console.log(array2.join(' '));
+
+</script>

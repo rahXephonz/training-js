@@ -1,0 +1,17 @@
+<script>
+
+//Function Declaration bersifat fleksibel dan bisa dipanggil terlebih dahulu
+
+ShowMsg(' Rizukyy'); // panggil dulu 
+function ShowMsg(nama){
+        alert('hello' + nama);
+}
+
+//Function Expression tidak bisa dipanggil terlebih dahulu
+var ShowMessage = function(nama){
+    alert('Hello, ' + nama);
+}
+
+ShowMessage('Rizukyy');
+
+</script>
