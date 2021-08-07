@@ -1,0 +1,35 @@
+//fungsi yang memanggilnya sendiri
+
+
+<script>
+
+function tampilAngka(n){
+    if(n === 0){ // basecase
+        return; // perintah berhenti /mengembalikan
+    }
+    console.log(n);
+    return tampilAngka(n-1);
+}
+
+tampilAngka(10);
+
+function faktorial(n){
+    
+    if(n === 0){ // jika nilai n dinyatakan 0 kembalikan ke nilai 1
+        return 1;
+    }
+    
+    
+    return n * faktorial(n-1);
+}
+
+var nilai = parseInt(prompt("Nilai: "));
+console.log(faktorial(nilai));
+
+// harus banyak banyak belajar!
+
+
+
+
+//base case adalah kondisi akihr yang memiliki nilai
+</script>

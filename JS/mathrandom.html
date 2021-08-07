@@ -1,0 +1,62 @@
+<script>
+
+    // pilihan input user
+    var user = prompt('Pilih : gajah, semut, orang');
+
+    // pilihan input computer secara random
+    // Membangkitkan bilangan random
+
+    var comp = Math.random();
+
+    if(comp < 0.34){ // jika computer input angka random kurang dari 0.34
+        comp = 'gajah';
+    }
+    else if(comp >= 0.34 && comp < 0.67){ // jika computer input angka lebih sama dgn 0.34 dan input angka kurang dari 0.67
+        comp = 'orang';
+    }
+    else{ // selain inputan angka yang diatas
+        comp = 'semut';
+    }
+
+    console.log(comp);
+
+    // Menentukan rules
+    var hasil = '';
+    if(user == comp){
+        hasil = 'SERI!';        
+    }
+    // User memilih gajah
+    else if(user == 'gajah'){
+        /*if(comp == 'orang'){
+            hasil = 'MENANG!'; 
+        }
+        else{
+            hasil = 'KALAH!';
+        } */
+
+        hasil = (comp == 'orang') ? 'MENANG' : 'kalah'; // Ternary option hasilnya true atau false pilihan orang itu sama gak yang dipilih sama comp
+
+    }
+
+    //User memilih orang
+    else if(user == 'orang'){
+        
+        hasil = (comp == 'gajah') ? 'MENANG' : 'KALAH';
+
+    }
+
+    //User memilih semut
+    else if(user == 'semut'){
+
+        hasil = (comp == 'orang') ? 'KALAH' : 'MENANG';
+
+    }
+
+    else{
+        hasil = 'memasukkan inputan yang salah!'
+    }
+
+    // Output
+    alert('Kamu memilih ' + user + ' dan Komputer memilih ' + comp + ' maka hasilnya : ' + hasil);
+
+</script>

@@ -1,0 +1,50 @@
+<script>
+
+/*
+function kurang(x,y){
+    
+    return x - y;
+
+}
+
+function kali(a,b){
+
+    return a * b;
+
+}
+
+function tambah(i,j){
+    return i + j;
+}
+
+var i = parseInt(prompt('Masukann nilai pertama : ')); //Ini adalah argument yang akan dipanggil
+var j = parseInt(prompt('Masukann nilai kedua : '));
+var hasil = tambah(i*3, j*3);
+
+console.log(hasil);
+console.log(kali(200, 3));
+console.log(kurang(22, 10));
+
+var hasil = kurang(kali(30, 2), kali(20, 2)); // Ini juga pemanggilan function dengan argument
+console.log(hasil); */
+
+function tambah(){
+    var hasil = 0; //dari hasil 0
+
+    for( var i = 0; i < arguments.length; i++){ // menghitung penilaian menggunakan argument
+        
+        hasil += arguments[i];
+    }
+
+    return hasil;
+}
+
+var coba = tambah(1,2,3,4,5,6,7,8,9,10);
+console.log(coba);
+
+/*
+var coba = tambah(9,10,12,13,14,15,"Hello",false);
+console.log(coba); */
+
+
+</script>

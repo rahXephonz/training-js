@@ -1,0 +1,210 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background-image: url(https://image.freepik.com/free-vector/apple-seamless-background-repeating-pattern-wallpaper-background-cute-seamless-pattern-background_42349-850.jpg);
+    font-family: 'Roboto Slab', serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: white;
+}
+
+.header {
+    padding: 20px;
+    background-color: #ffff;
+}
+
+.header .judul {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: salmon;
+    padding: 3px;
+}
+
+.header a:hover {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.hero {
+
+    height: 350px;
+    /*widthnya auto 800px*/
+    background-image: url(/images/hero.jpg);
+    background-size: cover;
+    background-position: 0 -50px;
+    /* x & y */
+
+}
+
+.content-1 {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.content-1 span {
+    font-size: 30px;
+}
+
+.content-2 {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.content-2 span {
+    font-size: 30px;
+}
+
+.meta-data h1 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.meta-data p {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.meta-data span {
+    color: red;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #333;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: white;
+    text-align: center;
+}
+
+footer .fas {
+    color: red;
+}

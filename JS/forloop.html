@@ -1,0 +1,51 @@
+
+<script>
+    /*alert('Mulai');
+
+    for(var i = 0; i < 5; i++){ //Var i adalah sebagai variable dimulai dari 0 dan akan melakukan perulangan sebanyak 5kali i++ akan bertambah
+        alert('Halo dunia');
+    }
+
+    alert('Selesai');
+
+    var angka = prompt('Masukkan angka :');
+    if(angka % 2 === 0){ //sisa baginya sama dengan 0
+        alert(angka + ' adalah bilangan GENAP');
+    }
+    else{
+        alert(angka + ' adalah bilangan GANJIL')
+    }
+
+    for(var j = 0; j < 10; j++)
+    {
+        for(var i = 0; i < 10; i++){
+            console.log('Perulangan Ke - ' + j,i);
+        }
+        
+    } */
+
+var jmlangkot = 10;
+var angkotberoperasi = 6;
+
+for(noangkot = 1; noangkot <= jmlangkot; noangkot++){
+    if(noangkot <= 6 && noangkot !== 5){
+        console.log('Angkot No.' + noangkot + ' Beroperasi dengan baik.');
+    }
+
+    else if(noangkot === 8 || noangkot === 10 || noangkot === 5){
+        console.log('Angkot No.' + noangkot + ' Sedang Lembur.');
+    }
+
+    else{
+        console.log('Angkot No.' + noangkot + ' Sedang tidak beroperasi.')
+    }
+
+    //penjelasan diatas jika no angkot 1 kurang dari 6 dst itu bernilai true.
+    //penjelasan diatas jika no angkot dari 1 bertemu dengan angka 8 maka akan menghasilkan true dan print console
+    //jika selain diatas else 7 kurang dari 6 itu false dst maka akan print consolenya
+    //baris ke 31 apabila noangkot kurang dari 6 dan tidak sama dengan 5 artinya jika salah satu statement semua true maka hasilnya true
+    //jika ada yang false 1 maka hasilnya false dan statement tidak akan dikerjakan.
+}
+
+</script>
+
