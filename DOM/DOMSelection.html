@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dom Selection</title>
+  <style>
+    * { 
+        border: 2px solid black;
+        padding: 15px; 
+        margin: 15px; 
+    }
+    html { 
+      margin: 0;
+      padding: 0;
+    }
+    body { 
+      max-width: 600px;
+      margin: 30px auto;
+      font-family: sans-serif;
+      color: #333;
+    }
+
+
+    /* #b p{
+      color: red;
+    }
+
+    section#b ul li:nth-child(2) {
+      background-color: orange;
+    } */
+    
+
+  </style>
+</head>
+<body>
+
+  <h1 id="judul">Hello World</h1>
+  <div id="container">
+      <section id="a">
+          <p class="p1">paragraf 1</p>
+          <a href="http://instagram.com/sandhikagalih">Instagram Sandhika Galih</a>
+          <p class="p2">paragraf 2</p>
+          <p class="p3">paragraf 3</p>
+      </section>
+      <section id="b">
+          <p>paragraf 4</p>
+          <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+          </ul>
+      </section>
+  </div>
+
+</body>
+</html>
+
+<script>
+
+
+
+
+
+// //getElementById() // element yang dipanggil berdasarkan tag id -> mengembalikan element
+// const judul = document.getElementById('judul');
+// judul.style.color = 'red';
+// judul.style.backgroundColor = 'black';
+// judul.innerHTML = 'Saya uki'
+
+// //getElementsByTagName() // element element yang dipanggil dan memiliki tag tertentu -> mengembalikan htmlcollection mirip array
+// const paragraf = document.getElementsByTagName('p');
+// // paragraf[0].style.backgroundColor = 'lightblue';
+// // paragraf[1].style.backgroundColor = 'skyblue';
+// // paragraf[2].style.backgroundColor = 'green';
+
+// for(let i = 0; i < paragraf.length; i++){
+//   paragraf[i].style.backgroundColor = 'lightblue';
+// }
+
+// const h1 = document.getElementsByTagName('h1')[0];
+// h1.style.fontSize = '70px';
+
+// //getElementsByClassName() // elementy yang dipanggil berdasarkan kelas -> mengembalikan htmlcollection
+// const paragraf1 = document.getElementsByClassName('p1');
+// paragraf1[0].innerHTML = 'Ini diubah dari Javascript';
+
+// querySelector //mencari beberapa element selector -> menghasilkan elemet
+
+// const p4 = document.querySelector('#b p');
+
+// p4.style.color = 'red';
+// p4.style.fontSize = '40px';
+
+// const li = document.querySelector('section#b ul li:nth-child(2)');
+// li.style.backgroundColor = 'orange';
+
+// const paragraf = document.querySelector('p');
+// paragraf.innerHTML = 'Dirubah dari javascript';
+
+//querySelectorAll mencari semua element selector -> menghasilkan nodelist bersifat array
+
+const parag = document.querySelectorAll('p');
+for(let i = 0; i < parag.length; i++){
+  parag[i].style.backgroundColor = 'skyblue';
+}
+
+</script>

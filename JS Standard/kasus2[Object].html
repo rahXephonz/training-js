@@ -33,6 +33,10 @@ function Angkot(sopir, trayek, penumpang, kas){
                 this.kas += bayar;
                 return this.penumpang;
             }
+
+            else if(this.penumpang.length == 15){
+                console.log('Angkot sudah penuh!');
+            }
         }
     }
 }

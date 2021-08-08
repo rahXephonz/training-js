@@ -1,6 +1,6 @@
 <script>
 
-var angka = [1,2,3,4,5,6,7,8];
+/* var angka = [1,2,3,4,5,6,7,8];
 var nama = ['Udin','Asep','Kamal'];
 
 
@@ -11,19 +11,24 @@ angka.forEach(function(e){
 
 nama.forEach(function(e, i){
     console.log('Mahasiswa ke-' + (i+1) + ' adalah : ' + e);
-})
+}) */
 
 //map mengembalikan array
 
 var coba = [9,8,7,6,5];
 
-var angka2 = angka.map(function(e){
+var angka2 = coba.map(function(e){
     return e * 2;
 });
 
-console.log(angka2.join(' '));
 
-// sort mengurutkan array
+angka2.sort(function(a,b){
+    return a-b
+})
+console.log(angka2.join(' - '));
+
+
+/* sort mengurutkan array
 
 var angkaa = [2,4,8,12,10,14,16,6];
 angkaa.sort(function(a,b){
@@ -41,7 +46,7 @@ var angkaaa2 = angkaaa.find(function(x){
     return x > 5;
 })
 
-console.log(angkaaa2);
+console.log(angkaaa2);*/
 
 
 </script>
