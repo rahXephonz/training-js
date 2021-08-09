@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dom Selection</title>
+  <style>
+    * { 
+        border: 2px solid black;
+        padding: 15px; 
+        margin: 15px; 
+    }
+    html { 
+      margin: 0;
+      padding: 0;
+    }
+    body { 
+      max-width: 600px;
+      margin: 30px auto;
+      font-family: sans-serif;
+      color: #333;
+    }
+    .dark-mode{
+      background-color: #111;
+    }
+    .pink-font{
+      color:pink;
+    }
+
+
+    /* #b p{
+      color: red;
+    }
+
+    section#b ul li:nth-child(2) {
+      background-color: orange;
+    } */
+    
+
+  </style>
+</head>
+<body>
+
+  <h1 id="judul">Hello World</h1>
+  <div id="container">
+      <section id="a">
+          <p class="p1">paragraf 1</p>
+          <a href="http://instagram.com/sandhikagalih">Instagram Sandhika Galih</a>
+          <p class="p2">paragraf 2</p>
+          <p class="p3">paragraf 3</p>
+      </section>
+      <section id="b">
+          <p>paragraf 4</p>
+          <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+          </ul>
+      </section>
+  </div>
+
+</body>
+</html>
+
+<script>
+
+// element baru menggabungkan element
+
+const newparag = document.createElement('p');
+const textnewparag = document.createTextNode('paragraf baru');
+
+// simpan tulisan text ke dalam parag
+
+newparag.appendChild(textnewparag);
+
+// simpan newparag diakhir section A
+const sectionA = document.getElementById('a');
+sectionA.appendChild(newparag);
+
+
+
+</script>

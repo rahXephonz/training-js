@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dom Selection</title>
+  <style>
+    * { 
+        border: 2px solid black;
+        padding: 15px; 
+        margin: 15px; 
+    }
+    html { 
+      margin: 0;
+      padding: 0;
+    }
+    body { 
+      max-width: 600px;
+      margin: 30px auto;
+      font-family: sans-serif;
+      color: #333;
+    }
+    .dark-mode{
+      background-color: #111;
+    }
+    .pink-font{
+      color:pink;
+    }
+    
+
+  </style>
+</head>
+<body>
+
+  <h1 id="judul">Hello World</h1>
+  <button class="btn" onclick="ubahwarna()">Dark Mode</button>
+  <div id="container">
+      <section id="a">
+          <p class="p1">paragraf 1</p>
+          <a href="http://instagram.com/sandhikagalih">Instagram Sandhika Galih</a>
+          <p class="p2">paragraf 2</p>
+          <p class="p3">paragraf 3</p>
+      </section>
+      <section id="b">
+          <p class="p4">paragraf 4</p>
+          <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+          </ul>
+      </section>
+  </div>
+
+</body>
+</html>
+
+<script>
+
+// Event handler
+const darkmode = document.querySelector('.btn');
+
+function ubahwarna(){
+    document.body.classList.toggle('dark-mode');
+    document.body.classList.toggle('pink-font');
+}
+
+const p2 = document.querySelector('.p2');
+
+p2.onclick = ubahwarna;
+
+// addEventListener
+
+const p4 = document.querySelector('.p4');
+p4.addEventListener('click', function(){
+    const ul = document.querySelector('section#b ul');
+    const newli = document.createElement('li');
+    const textnewli = document.createTextNode('item baru');
+
+    newli.appendChild(textnewli);
+    ul.appendChild(newli);
+    
+});
+
+</script>
