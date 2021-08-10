@@ -13,6 +13,7 @@ close.forEach(function(element) {
         e.target.parentElement.style.display = 'none';
 
         //tergantung dengan aksi utama aksi utama dari tag close adalah href
+        //event prevent default
         e.preventDefault();
     })
 })
