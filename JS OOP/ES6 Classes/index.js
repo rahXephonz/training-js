@@ -18,12 +18,15 @@ class Person{
     getsMarried(newlastName){
         this.lastName = newlastName;
     }
+
 }
 
 const anne = new Person('Anne', 'Marrie', '09-29-1989');
 console.log(anne);
 console.log(anne.greeting());
 console.log(anne.calculateAge());
+
+//sudah menikah
 anne.getsMarried('Johnson');
 console.log(anne.greeting());
 
@@ -47,7 +50,7 @@ class Customer extends Orang{
         this.membership = membership;
     }
     static getMembershipcost(){
-        return 500;
+        return 500 + 'ribu';
     }
 }
 
