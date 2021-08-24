@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "company": "12 Inovasi Teknologi",
+        "phone": "123-2234-4456"
+    },
+
+    {
+        "id": 2,
+        "name": "Samuel Konzveky",
+        "company": "Design Furniture",
+        "phone": "123-4456-7789"
+    },
+
+    {
+        "id": 3,
+        "name": "Ratgha Pratav",
+        "company": "Boomer Technologies",
+        "phone": "123-9990-1112"
+    }
+
+]
